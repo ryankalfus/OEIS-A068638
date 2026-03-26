@@ -18,3 +18,15 @@ Add every change to this log as its own bullet. Start each bullet with the date 
 - 03/25/2026: Generated `analysis/odd-composite-witnesses.csv` and `analysis/least-witness-records.csv` for the odd-composite witness and least-witness analyses
 - 03/25/2026: Generated `analysis/even-admissible-statistics.csv` and `analysis/rejection-witnesses.csv` for the even-tail checks and rejection-audit trail
 - 03/25/2026: Generated `analysis/run-summary.md`, `analysis/conjecture-evidence.md`, and `analysis/residue-class-notes.md` from the completed 100000-term run
+- 03/25/2026: Refactored `scripts/compute_a068638.py` into a milestone-oriented pipeline with checkpointable summary state, streamed shard writers, baseline-prefix validation, and isolated run roots
+- 03/25/2026: Fixed short-run baseline prefix checking in `scripts/compute_a068638.py` after the first milestone dry run exposed it
+- 03/25/2026: Fixed initial accepted-term backfilling in `scripts/compute_a068638.py` so fresh milestone runs preserve the baseline CSV/TXT layout exactly
+- 03/25/2026: Made shard output finalization deterministic in `scripts/compute_a068638.py` by switching streamed shard writes to resumable work files and fixed deterministic validation metadata support
+- 03/25/2026: Fixed partial-stop cleanup in `scripts/compute_a068638.py` so interrupted milestone runs keep resumable work shards instead of finalizing them prematurely
+- 03/25/2026: Fixed repeated checkpoint overwrites in `scripts/compute_a068638.py` by checkpointing only on accepted-term iterations, making resumed checkpoint payloads deterministic
+- 03/25/2026: Made checkpoint gzip files and checkpoint-count metadata deterministic in `scripts/compute_a068638.py` so interrupted-resume validation can compare checkpoint artifacts byte-for-byte
+- 03/25/2026: Fixed milestone capture and odd-witness report logic in `scripts/compute_a068638.py` so non-checkpoint milestones are recorded at 250000 and 750000 and the conjecture report counts odd composites above 25 correctly
+- 03/25/2026: Generated `runs/first_1000000/data/a068638_first_1000000.txt` and `runs/first_1000000/data/a068638_first_1000000.csv` from the milestone-oriented direct computation through 1000000 terms
+- 03/25/2026: Generated ten resumable checkpoint snapshots under `runs/first_1000000/data/checkpoints/` together with `runs/first_1000000/data/checkpoints/manifest.json`
+- 03/25/2026: Generated sharded audit datasets under `runs/first_1000000/analysis/` for odd-composite witnesses, even admissibility statistics, and rejection witnesses
+- 03/25/2026: Generated `runs/first_1000000/analysis/least-witness-records.csv`, `runs/first_1000000/analysis/milestones.csv`, `runs/first_1000000/analysis/run-summary.md`, `runs/first_1000000/analysis/conjecture-evidence.md`, and `runs/first_1000000/analysis/residue-class-notes.md`

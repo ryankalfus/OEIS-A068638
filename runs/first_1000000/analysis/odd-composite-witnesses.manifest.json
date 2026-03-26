@@ -1,0 +1,40 @@
+{
+  "base_name": "odd-composite-witnesses",
+  "headers": [
+    "m",
+    "least_witness",
+    "witness_count",
+    "least_prime_sum",
+    "record_least_witness",
+    "sample_witnesses",
+    "residue_mod_6",
+    "residue_mod_30",
+    "residue_mod_210"
+  ],
+  "shard_size": 250000,
+  "total_rows": 1159217,
+  "current_shard_index": 5,
+  "current_shard_rows": 159217,
+  "shards": [
+    {
+      "file": "odd-composite-witnesses/odd-composite-witnesses-000001.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "odd-composite-witnesses/odd-composite-witnesses-000002.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "odd-composite-witnesses/odd-composite-witnesses-000003.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "odd-composite-witnesses/odd-composite-witnesses-000004.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "odd-composite-witnesses/odd-composite-witnesses-000005.csv.gz",
+      "rows": 159217
+    }
+  ]
+}

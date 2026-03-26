@@ -1,0 +1,42 @@
+{
+  "base_name": "even-admissible-statistics",
+  "headers": [
+    "e",
+    "accepted",
+    "e_plus_1_composite",
+    "e_plus_25_composite",
+    "matches_E_rule",
+    "blocking_witness",
+    "prime_sum"
+  ],
+  "shard_size": 250000,
+  "total_rows": 1356786,
+  "current_shard_index": 6,
+  "current_shard_rows": 106786,
+  "shards": [
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000001.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000002.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000003.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000004.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000005.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "even-admissible-statistics/even-admissible-statistics-000006.csv.gz",
+      "rows": 106786
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "base_name": "rejection-witnesses",
+  "headers": [
+    "candidate",
+    "candidate_parity",
+    "blocking_term",
+    "blocking_term_index",
+    "prime_sum",
+    "rejection_kind",
+    "witness_count"
+  ],
+  "shard_size": 250000,
+  "total_rows": 1516008,
+  "current_shard_index": 7,
+  "current_shard_rows": 16008,
+  "shards": [
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000001.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000002.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000003.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000004.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000005.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000006.csv.gz",
+      "rows": 250000
+    },
+    {
+      "file": "rejection-witnesses/rejection-witnesses-000007.csv.gz",
+      "rows": 16008
+    }
+  ]
+}
